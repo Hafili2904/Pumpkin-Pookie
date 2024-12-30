@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pumpkin ❤ Pookie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@500&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS -->
+    <style>
+        body {
+            font-family: 'Great Vibes', cursive;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #ff4e66;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box; /* Menambahkan box-sizing */
+        }
+
+        button {
+            background-color: #ff4e66;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff2b3d;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-box button">
+        <center><h2>Login Dulu Yaaw</h2></center>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <div class="error" id="error-message"></div>
+    
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "levinaaaa" && password === "pacarhaphap") {
+                window.location.href = "pumpkin&pokiee.html"; // Arahkan ke halaman utama
+            } else {
+                document.getElementById("error-message").innerText = "Kalo Salah Bukan Pacarnya Haphap (Wleeeee)";
+            }
+        }
+    </script>
+
+</body>
+</html>

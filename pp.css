@@ -1,0 +1,173 @@
+/* Styling Umum */
+/* Styling Umum untuk Seluruh Halaman */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
+    color: #333;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center; /* Menjaga konten tetap berada di tengah secara vertikal */
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+
+/* Kontainer Box Umum */
+.container {
+    width: 80%;
+    max-width: 1200px;  /* Sesuaikan dengan ukuran maksimal yang diinginkan */
+    margin: 0 auto;     /* Untuk memastikan kontainer berada di tengah secara horizontal */
+    display: flex;
+    flex-direction: column;  /* Sesuaikan dengan arah elemen di dalam box */
+    align-items: center;     /* Menempatkan elemen secara horizontal di tengah */
+    justify-content: center; /* Menjaga agar elemen di dalam box terpusat secara vertikal */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Box Ke-3 (Jika ini adalah box yang dimaksud) */
+.box-3 {
+    width: 100%;         /* Sesuaikan dengan lebar kontainer */
+    max-width: 900px;    /* Sesuaikan dengan ukuran maksimal */
+    padding: 30px;
+    margin: 10px 0;
+    background-color: #ff6b81;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Header Styling */
+.header {
+    background-color: #ff6b81;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;  /* Menjadikan elemen header vertikal */
+    justify-content: center;  /* Memastikan konten header berada di tengah */
+    align-items: center;      /* Menyelaraskan elemen di tengah */
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Teks Header */
+.header h1 {
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 10px;  /* Menambahkan jarak antara teks dan gambar */
+    text-align: center;  /* Pastikan teks berada di tengah */
+}
+
+/* User Info Styling */
+.user-info {
+    display: flex;
+    flex-direction: column;  /* Mengatur info pengguna menjadi vertikal */
+    align-items: center;
+    color: white;
+    justify-content: center; /* Menempatkan gambar di bawah teks */
+}
+
+/* Styling untuk Teks Nama */
+.user-info span {
+    margin-bottom: 10px;  /* Memberikan jarak antara teks dan gambar */
+    font-size: 22px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Styling untuk Gambar Profil */
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Efek Hover pada Gambar Profil */
+.user-info img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsif untuk ukuran layar kecil */
+@media (max-width: 412px) {
+    .header {
+        padding: 20px;
+        width: 100%;
+    }
+
+    /* Ubah ukuran teks untuk responsif */
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .user-info span {
+        font-size: 18px;
+    }
+
+    .user-info img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.adventure-box {
+    width: 80%;           /* Atur lebar box */
+    max-width: 900px;     /* Atur lebar maksimal agar box tidak terlalu besar */
+    padding: 40px;
+    background-color: #ff6b81;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertikal tengah */
+    align-items: center;     /* Horizontal tengah */
+    text-align: center;      /* Teks juga di tengah */
+    margin: 20px auto;       /* Menambahkan jarak atas dan bawah serta memastikan box terpusat */
+}
+
+.adventure-box h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;          /* Warna teks putih agar kontras */
+}
+
+/* Menambahkan font romantis dan mengatur animasi */
+.footer-text {
+    font-size: 1.5rem; /* Ukuran font yang lebih besar */
+    font-family: 'Dancing Script', cursive; /* Font yang lebih romantis */
+    font-weight: bold;
+    text-align: center;
+    color: #ff4f84; /* Warna pink cerah */
+    animation: moveUpDown 2s ease-in-out infinite;
+}
+
+/* Animasi gerak naik-turun */
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Posisi awal (di tempat) */
+    }
+    50% {
+        transform: translateY(-10px); /* Bergerak ke atas */
+    }
+    100% {
+        transform: translateY(0); /* Kembali ke posisi awal */
+    }
+}

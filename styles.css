@@ -1,0 +1,54 @@
+/* Styling Box Login */
+.login-box {
+    width: 90%; /* Menggunakan 90% dari layar, biar ada jarak di kiri dan kanan */
+    max-width: 400px; /* Batas maksimal lebar box di layar besar */
+    margin: 50px auto; /* Tengah secara horizontal */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling Input */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%; /* Input full mengikuti box */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Tombol Login */
+.login-box button {
+    width: 100%; /* Tombol penuh mengikuti box */
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #ff4e66;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+    background-color: #ff2b3d;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 480px) {
+    .login-box {
+        width: 80%; /* Lebih kecil untuk layar kecil */
+        padding: 15px;
+        text-align: center;
+    }
+
+    .login-box button {
+        font-size: 14px; /* Font lebih kecil di layar HP */
+        width: 95%; /* Lebih kecil untuk layar kecil */
+        padding: 15px;
+        text-align: center;
+    }
+}
+
